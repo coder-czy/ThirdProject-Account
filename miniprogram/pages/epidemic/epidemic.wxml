@@ -1,0 +1,50 @@
+<view class="epidemic-box">
+    <view class="box1">
+        <view class="text">全国新冠肺炎疫情</view>
+        <view class="date">{{epidemic.date}}</view>
+        <view class="data-box clearFix">
+                  <view class="fl data-item">
+            <view class="t1">全球累计确诊</view>
+            <view class="t2 a7">{{epidemic.globalConfirmedCount}}</view>
+            <view class="t3">较昨天<text class="count {{epidemic.globalConfirmedIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.globalConfirmedIncr}}</text></view>
+          </view>
+
+          <view class="fl data-item">
+            <view class="t1">累计确诊</view>
+            <view class="t2 a1">{{epidemic.confirmedCount}}</view>
+            <view class="t3">较昨天 <text class="count {{epidemic.currentConfirmedIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.currentConfirmedIncr}}</text></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">现存确诊</view>
+            <view class="t2 a2">{{epidemic.currentConfirmedCount}}</view>
+            <view class="t3">较昨天<text class="count {{epidemic.confirmedIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.confirmedIncr}}</text></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">累计治愈</view>
+            <view class="t2 a3">{{epidemic.confirmedCount}}</view>
+            <view class="t3">较昨天<text class="count {{epidemic.confirmedIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.confirmedIncr}}</text></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">累计死亡</view>
+            <view class="t2 a4">{{epidemic.deadCount}}</view>
+            <view class="t3">较昨天<text class="count {{epidemic.deadIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.deadIncr}}</text></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">现存重症</view>
+            <view class="t2 a5">{{epidemic.seriousCount}}</view>
+            <view class="t3">>较昨天<text class="count {{epidemic.seriousIncr >0 ? 'add' : 'reduce'}}"> {{epidemic.seriousIncr}}</text></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">现存疑似</view>
+            <view class="t2 a6">{{epidemic.suspectedCount}}</view>
+            <view class="t3"></view>
+          </view>
+          <view class="fl data-item">
+            <view class="t1">新增疑似</view>
+            <view class="t2 a7">{{epidemic.suspectedIncr}}</view>
+            <view class="t3"></view>
+          </view>
+
+        </view>
+    </view>
+</view>

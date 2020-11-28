@@ -1,0 +1,133 @@
+.booking-bg{
+  height: 200rpx;
+  background-color: #87CEFA;
+}
+.booking-box{
+  padding: 20rpx
+}
+.booking-icons{
+  background-color: #fff;
+  margin-top: -100rpx;
+  border-radius: 20rpx;
+  padding-top: 40rpx;
+
+}
+.booking-title{
+  width: 200rpx;
+  height: 60rpx;
+  margin: 0rpx auto;
+  border: 1rpx solid #87CEFA;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.booking-title-item{
+  width: 50%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #444;
+}
+.booking-title-item.active{
+background-color: #87CEFA;
+color: white;
+}
+.icons-list{
+  margin-top: 40rpx;
+}
+.icons-list-item{
+width: 20%;
+margin-bottom: 40rpx;
+}
+.item-box{
+width: 64rpx;
+margin: 0 auto;
+transition: transform .15s linear;
+}
+.item-box.active{
+  transform: scale(1.2);
+  font-weight: bold;
+}
+.item-box-icon{
+  width: 64rpx;
+  height: 64rpx;
+}
+.item-box-text{
+text-align: center;
+font-size: 24rpx;
+color: #444;
+margin-top: 8rpx;
+}
+.box-icon-img{
+  height: 64rpx
+}
+.accout{
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+.accout-title{
+  font-size: 28rpx;
+  color: #444;
+  border-bottom: 1rpx solid #e8e8e8;
+  padding-bottom: 20rpx;
+
+}
+.accout-tabs{
+  margin-top: 20rpx
+}
+.accout-tabs-item{
+  width: calc(20% - 20rpx);
+  height: 48rpx;
+  background-color: #e8e8e8;
+  font-size: 22rpx;
+  color: #444;
+  text-align: center;
+  line-height: 48rpx;
+  margin:0 10rpx;
+  border-radius: 24rpx;
+}
+.accout-tabs-item.active{
+  background-color: #87CEFA;
+  color: white
+}
+.booking-content{
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+
+}
+.booking-content-item{
+  height: 70rpx;
+}
+.content-title{
+  width: 100rpx;
+  font-size: 28rpx;
+  color: #444;
+  line-height: 70rpx;
+
+}
+.content-box{
+  width: calc(100%-20rpx);
+  height: 70rpx;
+}
+.picker{
+  line-height: 70rpx;
+  font-size: 28rpx;
+  color: #444;
+}
+.money{
+  height: 70rpx;
+}
+.save{
+  height: 80rpx;
+  background-color: #87CEFA;
+  color: #fff;
+  margin-top: 60rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}

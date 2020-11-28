@@ -1,0 +1,67 @@
+.box1{
+  background-color: #fff;
+  padding: 20rpx;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #444;
+}
+.date{
+  color: #999;
+  margin: 10rpx 0;
+  font-size: 28rpx;
+}
+.data-item{
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.data-box{
+  margin-top: 20rpx;
+}
+.t1{
+  font-size: 28rpx;
+}
+.t2{
+  margin: 10rpx 0;
+  font-size: 28rpx;
+  color:  #e4393c
+}
+.t3{
+  font-size: 18rpx;
+  color: #999;
+}
+.not-item{
+  margin-bottom: 0
+}
+.count{
+  margin-left: 10rpx;
+}
+.add{
+  color: #d81e06;
+}
+.reduce{
+  color: #1afa29;
+}
+.a1{
+  color: #d80606
+}
+.a2{
+  color: #d88406
+}
+.a3{
+  color: #b8d806
+}
+.a4{
+  color: #06d899
+}
+.a5{
+  color: #0696d8
+}
+.a6{
+  color: #aad806
+}
+.a7{
+  color: #d4d806
+}

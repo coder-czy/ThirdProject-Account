@@ -1,0 +1,68 @@
+<view class="home">
+  <view class="month-box">
+    <!-- 本月结余 -->
+    <view>
+      <view>本月结余</view>
+      <view class="money">
+      <text>{{jieyu.int}}.</text>
+      <text class="decimal">{{jieyu.decimal}}</text>
+      </view>
+    </view>
+      <view class="shouru-zhichu">
+        <view class="fl">
+          <text class="m">本月收入</text>
+          <text>{{monthshouru}}</text>
+        </view>
+        <view class="fr">
+          <text class="m">本月支出</text>
+          <text>{{monthzhichu}}</text>
+        </view>
+        <view class="line"></view>
+      </view>
+  </view>
+    <!-- 筛选 -->
+  <view>
+       <!-- 日期筛选 -->
+
+
+
+            <view class="point-box">
+        <view class="data-box">
+          <view class="fl d">{{selectDate}}</view>
+          <view class="fl d shouru">收入：{{dateshouru}}</view>
+          <view class="fl d zhichu">支出：{{datezhichu}}</view>
+          <view class="fr point">
+            <view class="fl point-item"></view>
+            <view class="fl point-item"></view>
+            <view class="fl point-item"></view>
+          <view>
+
+        </view>
+          <picker mode="date" class="picker-box" start="{{start}}" end="{{end}}" bindchange="getDataByDate" >
+          <view class="picker">当前选择</view></picker>
+        </view>
+      </view>
+
+
+      <!-- 详细数据 -->
+      <view class="list">
+        <view class="list-item clearFix" wx:for="{{dateBookingData}}" wx:key="index">
+          <view class="fl list-item-img">
+            <image class="auto-img list-icon" src="{{item.typeIcons.icon}}" mode="widthFix"></image>
+          </view>
+          <view class="fl list-info">
+            <view class="list-item-describe fl">
+              <view class="top-text {{item.comment =='' ? 'not-comment' : ''}}">
+                <text class="type">{{item.typeIcons.title}}</text>
+                <text>{{item.account}}</text>
+              </view>
+              <view class="comment">{{item.comment}}</view>
+            </view>
+            <view class="list-item-money fr {{item.titles.type}}">{{item.titles.type=='shouru' ? '+￥'+item.money :'-￥'+item.money }}</view>
+          </view>
+        </view>
+      </view>
+
+  </view>
+</view>
+</view>

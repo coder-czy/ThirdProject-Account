@@ -1,0 +1,66 @@
+<view class="chart">
+
+  <!-- 搜索 -->
+  <view class="search clearFix">
+    <view class="fl date-box">
+      <picker class="picker-box" mode="date" start="{{start}}" end="{{end}}" bindchange="selectDate">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view>
+    <view class="fl condition">
+      <picker class="picker-box" range="{{dates}}" bindchange="selectDateTitle">
+        <view class="picker">按{{dateTitle}}查询</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="chart-box">
+  
+    <!-- 统计 -->
+    <view class="tag clearFix">
+      <view class="fl tag-item" wx:for="{{titles}}" wx:key="index" >
+        <view class="tag-content {{item.isActive ? 'bc-' +item.type : '' }}" data-active="{{item.isActive}}" data-index="{{index}}" bindtap="toggleTitles">
+          <view class="title t">{{item.title}}{{item.name}}</view>
+          <view class="{{item.type}} t">{{item.money}}</view>
+        </view>
+      </view>
+ 
+    </view>
+
+    <!-- 饼图 -->
+    <view class="pie">
+      <canvas canvas-id="pieCanvas"style="width:{{width+'px'}}; height:620rpx;" ></canvas>
+    </view>
+
+    <!-- 统计记账数据类型 -->
+    <view class="list">
+    
+      <view class="item" wx:for="{{bookingDataType}}" wx:key="index" data-ids="{{item.ids}}" bindtap="viewBookData">
+        <view class="fl item-icon">
+          <image class="auto-img item-img" src="{{item.icon}}" mode="widthFix"></image>
+        </view>
+        <view class="fl item-content">
+
+          <view class="text">
+            <view class="fl type">{{item.title}}</view>
+            <view class="fr {{item.type}}">￥{{item.money}}</view>
+          </view>
+
+          <!-- 进度条 -->
+          <view class="progress">
+            <view class="fl progress-box">
+              <view class="progress-active" style="background-color:{{item.color}};width:{{item.percent}}" ></view>
+            </view>
+            <view class="fl count">{{item.count}}笔</view>
+          </view>
+
+        </view>
+        <view class="fl arrow">
+          <image class="auto-img arrow-img" src="../../icons/arrow.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  
+  </view>
+
+</view>

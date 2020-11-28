@@ -1,0 +1,23 @@
+<view class="my">
+
+  <!-- 个人信息 -->
+  <view class="my-box">
+    <view class="my-info">
+      <view class="fl my-img">
+          <image class=" auto-img my-infoimg" src="{{userInfo.img}}"></image>
+      </view>
+      <view class="fl nickname">{{userInfo.nickname}}</view>
+    </view>
+  </view>
+
+  <!-- 列表 -->
+  <view class="list">
+    <view class="item {{index > 0 ? 't-item' : ''}}" wx:for="{{listData}}" wx:key="index" data-page="{{item.page}}" bindtap="goPage">
+      <view class="fl title">{{item.title}}</view>
+      <view class="fr arrow">
+        <image class="auto-img arrow-img" src="../../icons/arrow.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

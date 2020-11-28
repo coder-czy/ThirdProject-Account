@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/booking/booking",
+    "pages/my/my",
+    "pages/chart/chart",
+    "pages/detail/detail",
+    "pages/mybooking/mybooking",
+    "pages/epidemic/epidemic",
+    "pages/auth/auth"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "记账工具",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#87CEFA",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./icons/home.png",
+        "selectedIconPath": "./icons/home_select.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "记账",
+        "iconPath": "./icons/booking.png",
+        "selectedIconPath": "./icons/booking_select.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "./icons/chart.png",
+        "selectedIconPath": "./icons/chart_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./icons/my.png",
+        "selectedIconPath": "./icons/my_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

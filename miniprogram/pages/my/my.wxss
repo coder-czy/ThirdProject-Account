@@ -1,0 +1,46 @@
+.my-box{
+  padding: 60rpx;
+  background-color: #87CEFA;
+}
+.my-info{
+  height: 200rpx
+}
+.my-img{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10rpx rgba(255, 255, 255, .3);
+  overflow: hidden;
+}
+.my-infoimg{
+  height: 200rpx;
+}
+.nickname{
+  color: #fff;
+  margin-left: 60rpx;
+  line-height: 200rpx;
+
+}
+.list{
+  background-color: #fff;
+}
+.item{
+  height: 100rpx;
+  padding: 0 20rpx;
+
+}
+.arrow{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 36rpx;
+}
+.arrow-img{
+  height: 28rpx;
+}
+.title{
+  line-height: 100rpx;
+}
+.t-item{
+  border-top: 1px solid #e8e8e8
+}

@@ -1,0 +1,4 @@
+<view>
+
+    <button open-type="getUserInfo" bindgetuserinfo="getUserAuthInfo" class="auth-btn">点击授权</button>
+</view>

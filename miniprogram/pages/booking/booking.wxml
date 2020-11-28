@@ -1,0 +1,61 @@
+<view class="booking">
+
+  <view class="booking-bg"></view>
+  <view class="booking-box">
+    <view class="booking-icons">
+
+      <view class="booking-title clearfix">
+        <view class="fl booking-title-item {{item.isActive ? 'active' : ''}} " wx:for="{{titles}}" wx:key="index" bindtap="toggleTitle" data-index="{{index}}" data-active="{{item.isActive}}">{{item.title}}</view>
+
+      </view>
+
+      <!-- 图标 -->
+      <view class="icons-list clearFix">
+        <view class="fl icons-list-item" wx:for="{{bookingIconsData}}" wx:key="index">
+          <view class="item-box {{item.isActive ? 'active' : ''}}" bindtap="toggleIcons" data-index="{{index}}" data-active="{{item.isActive}}">
+            <view class="item-box-icon ">
+              <image class="auto-img box-icon-img" src="{{item.icon}}" mode="widthFix"></image>
+            </view>
+            <view class="item-box-text">{{item.title}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 账户选择 -->
+    <view class="accout ">
+      <view class="accout-title clearFix">账户选择</view>
+      <view class="accout-tabs clearFix">
+        <view class="fl accout-tabs-item {{item.isActive ? 'active' : ''}}" wx:for="{{accountData}}" wx:key="index" bindtap="toggleAccount" data-index="{{index}}" data-active="{{item.isActive}}">{{item.title}}</view>
+      </view>
+    </view>
+
+    <view class="booking-content">
+      <view class="booking-content-item">
+        <view class="fl content-title">日期</view>
+        <view class="fl content-box">
+          <picker mode="date" start="2019-01-01" end="{{end}}" bindchange="selectDate">
+            <view class="picker">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="booking-content-item">
+        <view class="fl content-title">金额</view>
+        <view class="fl content-box">
+          <input class="money" type="digit" placeholder="输入金额" value="{{money}}" bindchange="modifyMoney"></input>
+        </view>
+      </view>
+      <view class="booking-content-item">
+        <view class="fl content-title">备注</view>
+        <view class="fl content-box">
+          <input class="money" type="text" placeholder="输入备注" value="{{comment}}" maxlength="20" bindchange="modifyComment"></input>
+
+        </view>
+      </view>
+      <!-- 保存 -->
+      <view class="save" bindtap="save">保存</view>
+    </view>
+
+  </view>
+  <!-- 账户选择 -->
+</view>
